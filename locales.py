@@ -45,6 +45,16 @@ else:
             else:
                 return False
 
+    class FrenchLocaleCommand(sublime_plugin.ApplicationCommand):
+        def __init__(self):
+            self.locale = Locale('fr_FR')
+
+        def run(self):
+            self.locale.run()
+
+        def is_checked(self):
+            return self.locale.is_checked()
+
     class EnglishLocaleCommand(sublime_plugin.ApplicationCommand):
         def __init__(self):
             self.locale = Locale('en')
@@ -112,6 +122,7 @@ else:
                 shutil.copyfile(locale_file, os.path.join(default_package_dir(), m + ".sublime-menu"))
 
     CAPTIONS = {
+        'fr_FR': 'Langue Interface',
         'en':    'UI Language',
         'zh_CN': u'界面语言',
         'zh_TW': u'界面語言'

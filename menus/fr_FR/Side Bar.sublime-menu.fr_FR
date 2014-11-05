@@ -1,0 +1,11 @@
+[
+	{ "caption": "Nouveau Fichier", "command": "new_file_at", "args": {"dirs": []} },
+	{ "caption": "Renommer…", "command": "rename_path", "args": {"paths": []} },
+	{ "caption": "Effacer Fichier", "command": "delete_file", "args": {"files": []} },
+	{ "caption": "Ouvrir le Dossier Contenant…", "command": "open_containing_folder", "args": {"files": []} },
+	{ "caption": "-", "id": "folder_commands" },
+	{ "caption": "Nouveau Dossier…", "command": "new_folder", "args": {"dirs": []} },
+	{ "caption": "Effacer Dossier", "command": "delete_folder", "args": {"dirs": []} },
+	{ "caption": "Chercher dans le Dossier…", "command": "find_in_folder", "args": {"dirs": []} },
+	{ "caption": "-", "id": "end" }
+]

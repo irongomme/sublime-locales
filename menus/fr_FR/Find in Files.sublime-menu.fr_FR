@@ -1,0 +1,8 @@
+[
+    { "command": "clear_location", "caption": "Effacer" },
+    { "command": "add_directory", "caption": "Ajouter dossier" },
+    { "command": "add_where_snippet", "args": {"snippet": "*.${0:txt}"}, "caption": "Ajouter filtre natif" },
+    { "command": "add_where_snippet", "args": {"snippet": "-*.${0:txt}"}, "caption": "Ajouter filtre externe" },
+    { "command": "add_where_snippet", "args": {"snippet": "<open folders>"}, "caption": "Ajouter les dossiers ouverts" },
+    { "command": "add_where_snippet", "args": {"snippet": "<open files>"}, "caption": "Ajouter les fichiers ouverts" }
+]

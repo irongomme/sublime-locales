@@ -6,9 +6,14 @@
                 "caption": "-"
             }, 
             {
-                "caption": "UI Language", 
+                "caption": "Langue Interface", 
                 "id": "locale", 
                 "children": [
+                    {
+                        "caption": "Français", 
+                        "checkbox": false, 
+                        "command": "french_locale"
+                    }, 
                     {
                         "caption": "English", 
                         "checkbox": false, 

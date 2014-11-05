@@ -1,0 +1,13 @@
+[
+    { "command": "copier" },
+    { "command": "couper" },
+    { "command": "coller" },
+    { "caption": "-", "id": "sélection" },
+    { "command": "tout sélectionner" },
+    { "caption": "-", "id": "fichier" },
+    { "command": "open_in_browser", "caption": "Ouvrir dans un Navigateur" },
+    { "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"}, "caption": "Ouvrir son dossier…" },
+    { "command": "copy_path", "caption": "Copier le Chemin du Fichier" },
+    { "command": "reveal_in_side_bar", "caption": "Dévoiler dans la barre latérale" },
+    { "caption": "-", "id": "fin" }
+]
