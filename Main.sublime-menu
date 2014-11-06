@@ -10,14 +10,14 @@
                 "id": "locale", 
                 "children": [
                     {
-                        "caption": "Français", 
-                        "checkbox": false, 
-                        "command": "french_locale"
-                    }, 
-                    {
                         "caption": "English", 
                         "checkbox": false, 
                         "command": "english_locale"
+                    },
+                    {
+                        "caption": "Français", 
+                        "checkbox": false, 
+                        "command": "french_locale"
                     }, 
                     {
                         "caption": "简体中文", 
