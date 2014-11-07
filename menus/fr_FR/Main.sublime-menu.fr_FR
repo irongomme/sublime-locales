@@ -326,12 +326,12 @@
         "children":
         [
             { "command": "show_panel", "args": {"panel": "find"}, "caption": "Rechercher…" },
-            { "command": "find_next" },
-            { "command": "find_prev", "caption": "Chercher le Suivant" },
+            { "command": "find_next", "caption": "Chercher le Suivant" },
+            { "command": "find_prev", "caption": "Chercher le Précédent" },
             { "command": "show_panel", "args": {"panel": "incremental_find", "reverse": false}, "caption": "Recherche Incrémentale" },
             { "caption": "-" },
             { "command": "show_panel", "args": {"panel": "replace"}, "caption": "Remplacer…" },
-            { "command": "replace_next" },
+            { "command": "replace_next", "caption": "Remplacer le Suivant" },
             { "caption": "-" },
             { "command": "find_under", "caption": "Recherche Rapide" },
             { "command": "find_all_under", "caption": "Rechercher Rapidement dans Tout" },
@@ -348,7 +348,7 @@
                 "children":
                 [
                     { "command": "show_panel", "args": {"panel": "output.find_results"}, "caption": "Voir le Panneau de Résultats" },
-                    { "command": "next_result" },
+                    { "command": "next_result", "caption": "Résultat Suivant" },
                     { "command": "prev_result", "caption": "Résultat Précédent" }
                 ]
             }
@@ -365,19 +365,19 @@
                 "id": "side_bar",
                 "children":
                 [
-                    { "command": "toggle_side_bar" },
+                    { "command": "toggle_side_bar", "caption": "Activer/Désactiver Barre Latérale" },
                     { "caption": "-" },
-                    { "command": "toggle_show_open_files" }
+                    { "command": "toggle_show_open_files", "caption": "Activer/Désactiver Fichiers Ouverts" }
                 ]
             },
-            { "command": "toggle_minimap" },
-            { "command": "toggle_tabs" },
-            { "command": "toggle_status_bar" },
-            { "command": "toggle_menu" },
-            { "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+            { "command": "toggle_minimap", "caption": "Activer/Désactiver Minicarte" },
+            { "command": "toggle_tabs", "caption": "Activer/Désactiver Onglets" },
+            { "command": "toggle_status_bar", "caption": "Activer/Désactiver Barre d'État" },
+            { "command": "toggle_menu", "caption": "Activer/Désactiver Menu" },
+            { "command": "show_panel", "caption": "Afficher Console", "args": {"panel": "console", "toggle": true} },
             { "caption": "-", "id": "full_screen" },
-            { "command": "toggle_full_screen" },
-            { "command": "toggle_distraction_free" },
+            { "command": "toggle_full_screen", "caption": "Bascule Plein Écran" },
+            { "command": "toggle_distraction_free", "caption": "Bascule Mode sans Distraction" },
             { "caption": "-", "id": "groups" },
             {
                 "caption": "Agencement",
@@ -554,8 +554,8 @@
             },
             { "caption": "-" },
             { "command": "toggle_setting", "args": {"setting": "spell_check"}, "caption": "Vérification Orthographe", "checkbox": true },
-            { "command": "next_misspelling" },
-            { "command": "prev_misspelling" },
+            { "command": "next_misspelling", "caption": "Erreur Orthographique Suivante" },
+            { "command": "prev_misspelling", "caption": "Erreur Orthographique Précédente" },
             {
                 "caption": "Dictionnaire",
                 "children": [ { "command": "$dictionaries" } ]
@@ -613,33 +613,33 @@
                 ]
             },
             {
-                "caption": "Favoris",
+                "caption": "Signets",
                 "mnemonic": "b",
                 "id": "bookmarks",
                 "children":
                 [
-                    { "command": "toggle_bookmark" },
-                    { "command": "next_bookmark" },
-                    { "command": "prev_bookmark" },
-                    { "command": "clear_bookmarks" },
-                    { "command": "select_all_bookmarks" },
+                    { "command": "toggle_bookmark", "caption": "Activer/Désactiver Signet" },
+                    { "command": "next_bookmark","caption": "Signet Suivant" },
+                    { "command": "prev_bookmark", "caption": "Signet Précédent" },
+                    { "command": "clear_bookmarks", "caption": "Enlever les Signets" },
+                    { "command": "select_all_bookmarks", "caption": "Sélectionner Tous les Signets" },
                     { "caption": "-" },
-                    { "command": "select_bookmark", "args": {"index": 0} },
-                    { "command": "select_bookmark", "args": {"index": 1} },
-                    { "command": "select_bookmark", "args": {"index": 2} },
-                    { "command": "select_bookmark", "args": {"index": 3} },
-                    { "command": "select_bookmark", "args": {"index": 4} },
-                    { "command": "select_bookmark", "args": {"index": 5} },
-                    { "command": "select_bookmark", "args": {"index": 6} },
-                    { "command": "select_bookmark", "args": {"index": 7} },
-                    { "command": "select_bookmark", "args": {"index": 8} },
-                    { "command": "select_bookmark", "args": {"index": 9} },
-                    { "command": "select_bookmark", "args": {"index": 10} },
-                    { "command": "select_bookmark", "args": {"index": 11} },
-                    { "command": "select_bookmark", "args": {"index": 12} },
-                    { "command": "select_bookmark", "args": {"index": 13} },
-                    { "command": "select_bookmark", "args": {"index": 14} },
-                    { "command": "select_bookmark", "args": {"index": 15} }
+                    { "command": "select_bookmark", "caption": "Sélectionner Signet 1", "args": {"index": 0} },
+                    { "command": "select_bookmark", "caption": "Sélectionner Signet 2", "args": {"index": 1} },
+                    { "command": "select_bookmark", "caption": "Sélectionner Signet 3", "args": {"index": 2} },
+                    { "command": "select_bookmark", "caption": "Sélectionner Signet 4", "args": {"index": 3} },
+                    { "command": "select_bookmark", "caption": "Sélectionner Signet 5", "args": {"index": 4} },
+                    { "command": "select_bookmark", "caption": "Sélectionner Signet 6", "args": {"index": 5} },
+                    { "command": "select_bookmark", "caption": "Sélectionner Signet 7", "args": {"index": 6} },
+                    { "command": "select_bookmark", "caption": "Sélectionner Signet 8", "args": {"index": 7} },
+                    { "command": "select_bookmark", "caption": "Sélectionner Signet 9", "args": {"index": 8} },
+                    { "command": "select_bookmark", "caption": "Sélectionner Signet 10", "args": {"index": 9} },
+                    { "command": "select_bookmark", "caption": "Sélectionner Signet 11", "args": {"index": 10} },
+                    { "command": "select_bookmark", "caption": "Sélectionner Signet 12", "args": {"index": 11} },
+                    { "command": "select_bookmark", "caption": "Sélectionner Signet 13", "args": {"index": 12} },
+                    { "command": "select_bookmark", "caption": "Sélectionner Signet 14", "args": {"index": 13} },
+                    { "command": "select_bookmark", "caption": "Sélectionner Signet 15", "args": {"index": 14} },
+                    { "command": "select_bookmark", "caption": "Sélectionner Signet 16", "args": {"index": 15} }
                 ]
             },
             { "caption": "-" },
@@ -656,7 +656,7 @@
             { "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Snippet: "}, "caption": "Portions de codes…" },
             { "caption": "-", "id": "build" },
             {
-                "caption": "Système de Compilation",
+                "caption": "Moteur de Compilation",
                 "mnemonic": "u",
                 "children":
                 [
@@ -672,10 +672,10 @@
                     { "command": "set_build_system", "args": {"index": 7}, "checkbox": true },
                     { "command": "$build_systems" },
                     { "caption": "-" },
-                    { "command": "new_build_system", "caption": "Nouveau Système de Compilation…" }
+                    { "command": "new_build_system", "caption": "Nouveau Moteur de Compilation…" }
                 ]
             },
-            { "command": "build", "mnemonic": "B" },
+            { "command": "build", "mnemonic": "B", "caption": "Compiler" },
             { "command": "build", "args": {"variant": "Run"}, "mnemonic": "R" },
             { "command": "exec", "args": {"kill": true}, "caption": "Annuler la Compilation", "mnemonic": "C" },
             {
@@ -690,9 +690,9 @@
             },
             { "command": "toggle_save_all_on_build", "caption": "Tout Sauvegarder à la Compilation", "mnemonic": "A", "checkbox": true },
             { "caption": "-", "id": "macros" },
-            { "command": "toggle_record_macro", "mnemonic": "M" },
-            { "command": "run_macro", "caption": "Jouer la Macro", "mnemonic": "P" },
-            { "command": "save_macro", "caption": "Enregistrer la Macro…", "mnemonic": "v" },
+            { "command": "toggle_record_macro", "caption": "Capturer Macro", "mnemonic": "M" },
+            { "command": "run_macro", "caption": "Jouer Macro", "mnemonic": "P" },
+            { "command": "save_macro", "caption": "Enregistrer Macro…", "mnemonic": "v" },
             {
                 "caption": "Macros",
                 "children": [ { "command": "$macros" } ]
@@ -730,7 +730,7 @@
             { "caption": "-" },
             { "command": "prompt_select_project", "caption": "Basculer le Projet dans une Fenêtre…", "mnemonic": "S" },
             { "command": "save_project_as", "caption": "Enregistrer le Projet Sous…", "mnemonic": "A" },
-            { "command": "close_project", "mnemonic": "C" },
+            { "command": "close_project", "caption": "Fermer Projet", "mnemonic": "C" },
             { "command": "open_file", "args": {"file": "${project}"}, "caption": "Modifier Projet" },
             { "caption": "-" },
             { "command": "prompt_add_folder", "caption": "Ajouter Dossier au Projet…", "mnemonic": "d" },
@@ -799,9 +799,9 @@
             { "command": "open_url", "args": {"url": "http://www.sublimetext.com/docs/2/"}, "caption": "Documentation" },
             { "command": "open_url", "args": {"url": "http://twitter.com/sublimehq"}, "caption": "Twitter" },
             { "caption": "-" },
-            { "command": "purchase_license"},
-            { "command": "show_license_window", "caption": "Saisir la License" },
-            { "command": "remove_license"},
+            { "command": "purchase_license", "caption": "Acheter une License"},
+            { "command": "show_license_window", "caption": "Voir la License" },
+            { "command": "remove_license", "caption": "Retirer la License"},
             { "caption": "-" },
             { "command": "show_about_window", "caption": "À Propos de Sublime Text 2", "mnemonic": "A" }
         ]
